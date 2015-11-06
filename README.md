@@ -1,2 +1,2 @@
-# securet
+# SecurET
 Security by eye movements.
