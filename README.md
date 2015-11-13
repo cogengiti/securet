@@ -10,3 +10,7 @@ Security by eye movements.
 
 ### Miscellaneous
  - [Biometric Verification via Complex Eye Movements: The Effects of Environment and Stimulus](http://cs.txstate.edu/~ok11/papers_published/2012_BTAS_Ho_Ko.pdf)
+
+### Eye Movements
+ - [Towards Task-Independent Person Authentication Using Eye Movement Signals] (http://www.cs.joensuu.fi/pages/tkinnu/webpage/pdf/eyebiometrics_ETRA2010.pdf)
+ 
