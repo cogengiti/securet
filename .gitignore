@@ -55,3 +55,8 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Visual Studio (C#)
+SecurET/obj
+SecurET/bin
+.vs
