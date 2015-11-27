@@ -1,9 +1,10 @@
 function [ A ] = asc_read( filename )
 %ASC_READ Read .asc files produced by the EyeLink
-%   ASC_READ(FILENAME) reads data from the file named FILENAME, and returns
-%   sampled data.
+%   A = ASC_READ(FILENAME) reads data from the file named FILENAME, and
+%   returns sampled data A where rows correspond to samples and columns to
+%   observation variables.
 %   
-%   See also ASC2MAT, ASC_READ_LINE.
+%   See also MAT_READ, ASC2MAT, ASC_READ_LINE.
     
     % Read contents of file into string
     text = fileread(filename);
