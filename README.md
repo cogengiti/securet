@@ -1,6 +1,11 @@
 # SecurET
 Security by eye movements.
 
+## Repository structure
+ - `data` contains our EyeLink data
+ - `mat` contains our Matlab source code of the data exploration/analysis
+ - `vs` contains our C# source code (Visual Studio) of the application for the EyeTribe
+
 ## Documentation
 ### Main
  - [The EyeTribe](https://theeyetribe.com/)
