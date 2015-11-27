@@ -19,9 +19,11 @@ function [ A ] = asc_read_line( str )
             B = [C; NaN; NaN; 0.0];
             A = B;
         else
+            % Note: uncomment the following two lines to get insight into
+            % lines without data.
             % Display line and read error message
-            disp(str);
-            disp(errmsg);
+            %disp(str);
+            %disp(errmsg);
             A = [];
         end
     end

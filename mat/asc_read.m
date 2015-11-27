@@ -3,7 +3,7 @@ function [ A ] = asc_read( filename )
 %   ASC_READ(FILENAME) reads data from the file named FILENAME, and returns
 %   sampled data.
 %   
-%   See also ASC_READ_LINE.
+%   See also ASC2MAT, ASC_READ_LINE.
     
     % Read contents of file into string
     text = fileread(filename);
@@ -14,6 +14,8 @@ function [ A ] = asc_read( filename )
     C = cellfun(@asc_read_line, B, 'UniformOutput', false);
     % Convert the contents of cell array into a single matrix
     A = cell2mat(C);
+    % Transpose data matrix such that rows correspond to data samples
+    A = transpose(A);
     
 end
 

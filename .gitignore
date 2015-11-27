@@ -56,7 +56,13 @@ docs/_build/
 # PyBuilder
 target/
 
+# Emacs temporary files
+*~
+
 # Visual Studio (C#)
 SecurET/obj
 SecurET/bin
 .vs
+
+# Avoid redundant .mat files with .asc files
+data/mat
