@@ -3,7 +3,9 @@ function [  ] = raw_plot( A )
 %   Detailed explanation goes here
     
     figure('visible', 'off');
-    plot(A(:, 2), A(:, 3));
+    hold('on');
+    plot(A(:, 2), A(:, 3), 'b-');
+    plot(A(:, 2), A(:, 3), 'b.');
     axis('equal');
     grid('on');
     title('Raw plot');
