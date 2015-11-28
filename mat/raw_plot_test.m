@@ -1,8 +1,20 @@
 % Test script of the 'raw_plot' function
 
-filename = '../data/mat/S19_0.mat';
+name = 'S19_0';
+filename = ['../data/mat/', name, '.mat'];
 A = mat_read(filename);
-raw_plot(A);
+f = raw_plot(A);
+disp(name);
+title([regexprep(name, '_', '\\_'), ' raw plot test']);
+
+dir = '../out';
+if not(exist(dir, 'dir'))
+    mkdir(dir);
+end
+filename = fullfile(dir, [name, '_raw_plot_test.png']);
+saveas(f, filename);
+
+close(f);
 
 disp('raw_plot function OK');
 

@@ -1,22 +1,21 @@
-function [  ] = raw_plot( A )
-%RAW_PLOT Summary of this function goes here
-%   Detailed explanation goes here
+function [ f ] = raw_plot( A )
+%RAW_PLOT Raw plot
+%   F = RAW_PLOT(A) plots vector Y of A versus vector X of A.
+%   
+%   See also PLOT.
     
-    figure('visible', 'off');
+    x = A(:, 2);
+    y = A(:, 3);
+    
+    f = figure();
     hold('on');
-    plot(A(:, 2), A(:, 3), 'b-');
-    plot(A(:, 2), A(:, 3), 'b.');
+    plot(x, y, 'b-');
+    plot(x, y, 'b.');
     axis('equal');
     grid('on');
-    title('Raw plot');
+    box('on');
     xlabel('x');
     ylabel('y');
-    
-    filename = '../out/raw_plot_test.fig';
-    saveas(gcf, filename);
-    
-    filename = '../out/raw_plot_test.png';
-    saveas(gcf, filename);
     
 end
 
