@@ -20,4 +20,7 @@ Security by eye movements.
 
 ### Eye Movements
  - [Towards Task-Independent Person Authentication Using Eye Movement Signals] (http://www.cs.joensuu.fi/pages/tkinnu/webpage/pdf/eyebiometrics_ETRA2010.pdf)
+
+### Eye Track data analyses
+- [Analyses Guideline] (C:\Users\Sym\Downloads\Summary_AsciiFile.docx)
  
