@@ -4,7 +4,6 @@ name = 'S19_0';
 filename = ['../data/mat/', name, '.mat'];
 A = mat_read(filename);
 f = raw_plot(A);
-disp(name);
 title([regexprep(name, '_', '\\_'), ' raw plot test']);
 
 dir = '../out';

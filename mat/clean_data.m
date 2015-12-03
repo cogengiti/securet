@@ -9,7 +9,6 @@ function [ B ] = clean_data( A )
     I = find(K);
     
     B = A(I, :);
-    disp(I);
     
 end
 

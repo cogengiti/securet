@@ -6,6 +6,14 @@ Security by eye movements.
  - `mat` contains our Matlab source code of the data exploration/analysis
  - `vs` contains our C# source code (Visual Studio) of the application for the EyeTribe
 
+## Quick start
+To quickly reproduce our experiments, one can simply:
+ 1. clone our repository (or download the source in ZIP format with the button above on the right)
+ 2. launch Matlab and make `securet/mat` as your current folder
+ 3. execute command `test`
+ 4. relax while computation goes on
+ 5. check `securet/out` for outputs
+
 ## Documentation
 ### Main
  - [The EyeTribe](https://theeyetribe.com/)
