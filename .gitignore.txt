@@ -65,4 +65,4 @@ SecurET/bin
 .vs
 
 # Avoid redundant .mat files with .asc files
-data/mat
+# data/mat
