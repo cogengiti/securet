@@ -1,4 +1,4 @@
-name = 'S8_0';
+name = 'S15_0';
 filename = ['../data/mat/', name, '.mat'];
 dir = '../out';
 if not(exist(dir, 'dir'))
@@ -51,6 +51,23 @@ plot(v_on * F, 'g-', 'LineWidth', 2);
 H = G';
 V = [v_off; v_off];
 stairs(H(:), V(:)' .* mod(1:length(H(:)), 2), 'b-', 'LineWidth', 1);
+
+%%
+figure();
+hold('on');
+grid('on');
+xlabel('x');
+ylabel('y');
+[K, ~] = size(G);
+for k = 1:K
+    d = G(k, 1);
+    f = G(k, 2);
+    x = B(d:f, 1);
+    x = x - x(1);
+    y = B(d:f, 2);
+    y = y - y(1);
+    plot(x, y, 'b-');
+end
 %% 4. Glissade detection
 
 % 5. Fixation detection
